@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menemen Rezept</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Merriweather:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="banner">
+      <img src="Images/tuerkische-menemen_Banner.jpg" alt="Langer Banner">
+    </div>
+    
+    <div class="title-container">
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#overview">Übersicht</a></li>
+          <li><a href="#ingredients">Zutaten</a></li>
+          <li><a href="#preparation">Zubereitung</a></li>
+          <li><a href="#externalRecipes">Externe Rezepte</a></li>
+        </ul>
+      </nav>
+      <h1>Menemen</h1>
+    </div>
+  </header>
+
+  <section class="overview" id="overview">
+    <div class="food-image">
+      <img src="Images/14-menemen-quer-4897_AllgFoto.jpg" alt="Menemen">
+    </div>
+    <div class="food-info">
+      <div class="prep-time">
+        <h3>Zubereitungszeit</h3>
+        <p>30 Minuten</p>
+      </div>
+      <div class="description">
+        <h3>Warum Sie es probieren sollten?</h3>
+        <p>Menemen ist ein Klassiker unter den Türken. Es ist das perfekte Gericht, um in den Tag zu starten. Es besteht aus vielen Proteinen sowie frischem Gemüse, ist leicht nachzukochen und bietet viel Sättigung.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="nutrition" id="nutrition">
+    <h2>Nährwerte pro Portion</h2>
+    <ul>
+      <li><strong>kcal:</strong> 300</li>
+      <li><strong>Fett:</strong> 22g</li>
+      <li><strong>Kohlenhydrate:</strong> 15g</li>
+      <li><strong>Eiweiss:</strong> 18g</li>
+    </ul>
+  </section>
+
+  <section class="ingredients" id="ingredients">
+    <h2 style="font-size: 30px">Zutaten</h2>
+    <div class="portion-control">
+      <label for="portionInput">Portionen:</label>
+      <input type="number" id="portionInput" value="1" min="1">
+    </div>
+    <div class="ingredients-container">
+      <table id="ingredientTable">
+        <thead>
+          <tr>
+            <th>Menge</th>
+            <th>Zutat</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr data-base="1.5" data-unit="Eier">
+            <td><span class="amount">1.5</span></td>
+            <td>Eier</td>
+          </tr>
+          <tr data-base="1" data-unit="Tomaten">
+            <td><span class="amount">1</span></td>
+            <td>Tomaten</td>
+          </tr>
+          <tr data-base="0.5" data-unit="grüne Paprikaschote">
+            <td><span class="amount">0.5</span></td>
+            <td>grüne Paprikaschote</td>
+          </tr>
+          <tr data-base="0.5" data-unit="Zwiebel">
+            <td><span class="amount">0.5</span></td>
+            <td>Zwiebel</td>
+          </tr>
+          <tr data-base="0.5" data-unit="EL Olivenöl">
+            <td><span class="amount">0.5</span></td>
+            <td>EL Olivenöl</td>
+          </tr>
+          <tr>
+            <td colspan="2">Salz (nach Geschmack)</td>
+          </tr>
+          <tr>
+            <td colspan="2">Pfeffer (nach Geschmack)</td>
+          </tr>
+          <tr>
+            <td colspan="2">Paprikapulver (edelsüss, nach Geschmack)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  
+
+  <section class="preparation" id="preparation">
+    <h2 style="font-size: 30px">Zubereitung</h2>
+    <div class="step">
+      <img src="Images/step1.avif" alt="Schritt 1">
+      <p><strong>Schritt 1:</strong> Zwiebel, grüne Paprikaschote und Tomaten in kleine Stücke schneiden.</p>
+      <hr>
+    </div>
+    <div class="step">
+      <img src="Images/step2.jpeg" alt="Schritt 2">
+      <p><strong>Schritt 2:</strong> Olivenöl in einer Pfanne erhitzen und Zwiebeln sowie Paprika glasig anbraten.</p>
+      <hr>
+    </div>
+    <div class="step">
+      <img src="Images/step3.jpg" alt="Schritt 3">
+      <p><strong>Schritt 3:</strong> Tomaten und Eier hinzufügen, mit Salz, Pfeffer und Paprikapulver würzen und unter Rühren stocken lassen.</p>
+      <hr>
+    </div>
+    <div class="step">
+      <img src="Images/step4.jpg" alt="Schritt 4">
+      <p><strong>Schritt 4:</strong> Sobald die Eier gestockt sind, wird das Menemen serviert – optional mit frischen Kräutern garnieren.</p>
+    </div>
+  </section>
+
+  <section class="external-links" id="externalRecipes">
+    <h2>Weitere Ressourcen</h2>
+    <ul>
+      <li><a href="https://www.eatbetter.de/rezepte/menemen-nach-tuerkischem-originalrezept?portions=2" target="_blank">Eatbetter</a></li>
+      <li><a href="https://www.gutekueche.at/tuerkisches-menemen-rezept-11903" target="_blank">Gutekueche</a></li>
+      <li><a href="https://shibaskitchen.de/menemen-rezept-tuerkisches-frueshtueck/" target="_blank">Shibaskitchen</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Mert Bal</p>
+  </footer>
+
+  <script>
+    const portionInput = document.getElementById('portionInput');
+const ingredientRows = document.querySelectorAll('#ingredientTable tbody tr[data-base]');
+
+function updateIngredients() {
+  const portions = parseFloat(portionInput.value);
+  ingredientRows.forEach(row => {
+    const base = parseFloat(row.getAttribute('data-base'));
+    const newAmount = base * portions;
+    row.querySelector('.amount').textContent = newAmount;
+  });
+}
+
+portionInput.addEventListener('input', updateIngredients);
+updateIngredients();
+
+  </script>
+</body>
+</html>
