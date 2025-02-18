@@ -140,11 +140,11 @@
 
   <script>
     const portionInput = document.getElementById('portionInput');
-const ingredientRows = document.querySelectorAll('#ingredientTable tbody tr[data-base]');
+    const ingredientRows = document.querySelectorAll('#ingredientTable tbody tr[data-base]');
 
-function updateIngredients() {
-  const portions = parseFloat(portionInput.value);
-  ingredientRows.forEach(row => {
+    function updateIngredients() {
+    const portions = parseFloat(portionInput.value);
+    ingredientRows.forEach(row => {
     const base = parseFloat(row.getAttribute('data-base'));
     const newAmount = base * portions;
     row.querySelector('.amount').textContent = newAmount;
