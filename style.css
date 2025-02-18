@@ -237,105 +237,104 @@ footer {
 }
  
 .main-nav {
-  background: var(--primary-color);
-  padding: 0.5rem 0;
+    background: var(--primary-color);
+    padding: 0.5rem 0;
 }
 
 .main-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  margin: 0;
-  padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
 }
 
 .main-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .main-nav ul li a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 .external-links {
-  background: var(--card-background);
-  padding: 1.5rem;
-  margin: 1rem 0;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  text-align: center;
+    background: var(--card-background);
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
 }
 
 .external-links h2 {
-  color: var(--primary-color);
-  margin-bottom: 1rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
 }
 
 .external-links ul {
-  list-style: none;
-  padding: 0;
+    list-style: none;
+    padding: 0;
 }
 
 .external-links ul li {
-  margin-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .external-links ul li a {
-  color: var(--accent-color);
-  text-decoration: none;
+    color: var(--accent-color);
+    text-decoration: none;
 }
-
 .external-links ul li a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 .nutrition {
-  background: linear-gradient(135deg, var(--card-background), #e6f7f7);
-  padding: 1.5rem;
-  margin: 1rem 0;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  text-align: center;
+    background: linear-gradient(135deg, var(--card-background), #e6f7f7);
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
 }
 
 .nutrition h2 {
-  color: var(--primary-color);
-  margin-bottom: 1rem;
-  font-size: 1.8rem;
-  position: relative;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    position: relative;
 }
 
 .nutrition h2::after {
-  content: "";
-  display: block;
-  width: 50px;
-  height: 4px;
-  background: var(--secondary-color);
-  margin: 0.5rem auto 0;
-  border-radius: 2px;
+    content: "";
+    display: block;
+    width: 50px;
+    height: 4px;
+    background: var(--secondary-color);
+    margin: 0.5rem auto 0;
+    border-radius: 2px;
 }
 
 .nutrition ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .nutrition ul li {
-  font-size: 1.2rem;
-  margin: 0.5rem;
-  flex: 1 1 100px;
-  background: var(--background-color);
-  border-radius: 8px;
-  padding: 0.5rem;
-  transition: transform 0.2s ease;
+    font-size: 1.2rem;
+    margin: 0.5rem;
+    flex: 1 1 100px;
+    background: var(--background-color);
+    border-radius: 8px;
+    padding: 0.5rem;
+    transition: transform 0.2s ease;
 }
 
 .nutrition ul li:hover {
-  transform: scale(1.05);
+    transform: scale(1.05);
 }
